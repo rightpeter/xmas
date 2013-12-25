@@ -29,10 +29,11 @@
                     else {
                         add("反正你在我心中永远是最美的!")
                     }
-                    add("美女{{ festival }}幸福哦~^.^ Merry Christmas!")
-                    var heart="<img src=\"http://pica.nipic.com/2008-05-22/2008522193427268_2.jpg\" width=\"250\" height=\"250\">"
+                    add("美女平安夜幸福哦~^.^ Merry Christmas!")
+                    <!-- var heart = "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*</br>&nbsp&nbsp&nbsp&nbsp***&nbsp&nbsp&nbsp&nbsp***</br>&nbsp&nbsp*****&nbsp*****</br>*************</br>&nbsp&nbsp***********</br>&nbsp&nbsp&nbsp&nbsp*********</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*******</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*****</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp***</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*"
                     add(heart)
-                   
+                    -->
+                    <img src="http://pica.nipic.com/2008-05-22/2008522193427268_2.jpg">
                     add("祝福送到，女神我走啦，北北^.^")
                     key = 2
                 }

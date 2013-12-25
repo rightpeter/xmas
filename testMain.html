@@ -1,0 +1,57 @@
+<html>
+    <head><title>祝福</title>
+    <script type="text/javascript">
+        var key = 0
+        function add(value){
+            document.getElementById('r').innerHTML += "</br></br>"
+            document.getElementById('r').innerHTML += value
+        }
+        function main(){
+            var str=document.getElementById("input").value
+            document.getElementById("input").value = ""
+            add(str)
+            switch (key) {
+            case 0:
+                key = 1
+                    add("快说，你是不是美女^.^ (我要肯定的答案->_->)")
+                break;
+            case 1:
+                var filter = /no|不|^N$|^n$|No|NO/;
+                if (filter.test(str)) {
+                    add("答案不对->_->,重答");
+                    add("快说，你是不是美女^.^ (我要肯定的答案->_->)")
+                }
+                else {
+                    filter = /yes|是|^Y$|^y$|Yes|YES/;
+                    if (filter.test(str)) {
+                        add("嘿嘿，对滴对滴!")
+                    }
+                    else {
+                        add("反正你在我心中永远是最美的!")
+                    }
+                    add("美女平安夜幸福哦~^.^ Merry Christmas!")
+                    var heart = "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*</br>&nbsp&nbsp&nbsp&nbsp***&nbsp&nbsp&nbsp&nbsp***</br>&nbsp&nbsp*****&nbsp*****</br>*************</br>&nbsp&nbsp***********</br>&nbsp&nbsp&nbsp&nbsp*********</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*******</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*****</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp***</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*"
+                    add(heart)
+                    add("祝福送到，女神我走啦，北北^.^")
+                    key = 2
+                }
+                break;
+            case 2:
+                add("女神，我已经走了啊，你真的这么留恋我么！")
+                break;
+            default:
+                add("啊哦，女神，我出错了！")
+                break;
+            }
+            return false
+        }
+    </script>
+    </head>
+    <body>
+        <p class="white" id='r'>哦，{{ name }}，我的女神，是你么</p>
+        <form action="" method="post" onsubmit="return main();">
+            <input name="input" type="text" id="input" value=""/>
+            <input name="s" type="submit" value="send" />
+        </form>
+    </body>
+</html>
